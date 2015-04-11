@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            form.new_form fieldset
+                { margin-bottom: 10px; }
+            form.new_form legend
+                { padding: 0 2px; font-weight: bold; }
+            form.new_form label
+                { display: inline-block; line-height: 1.8; vertical-align: top; }
+            form.new_form fieldset ol
+                { margin: 0; padding: 0; }
+            form.new_form fieldset li
+                { list-style: none; padding: 5px; margin: 0; }
+            form.new_form fieldset fieldset
+                { border: none; margin: 3px 0 0; }
+            form.new_form fieldset fieldset legend
+                { padding: 0 0 5px; font-weight: normal; }
+            form.new_form fieldset fieldset label
+                { display: block; width: auto; }
+            form.new_form em
+                { font-weight: bold; font-style: normal; color: #f00; }
+            form.new_form label
+                { width: 120px; /* Width of labels */ }
+            form.new_form fieldset fieldset label
+                { margin-left: 123px; /* Width plus 3 (html space) */ }
+            form.new_form fieldset li.radio label
+                { display:inline; }
+        </style>
+    </head>
+    <body>
+        <form class="new_form" action="submit.php">
+            <fieldset>
+                <legend>Update information</legend>
+                <ol>
+                    <li>
+                        <label for="name">Name*</label>
+                        <input id="name"/>
+                    </li>
+                    <li>
+                        <label for="password">Password*</label>
+                        <input id="password"/>
+                    </li>
+                    <li>
+                        <label for="address">Address*</label>
+                        <input id="address"/>
+                    </li>
+                    <li class="radio">
+                        <fieldset>
+                            <legend>Is this the correct address?</legend>
+                            <label><input type="radio" name="correct_address" /> Yes</label>
+                            <label><input type="radio" name="correct_address" /> No</label>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for="post">Post*</label>
+                        <textarea name="feedback" id="post" rows="10" cols="40"></textarea>
+                    </li>
+                </ol>
+            </fieldset>
+        </form>
+    </body>
+</html>
+
+Top
+
+    Locked
+
